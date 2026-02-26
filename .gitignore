@@ -1,0 +1,5 @@
+.env
+.env.*
+media/
+node_modules/
+__pycache__/
