@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+}
+
+/* Floating glow */
+.glow {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(56,189,248,.25), transparent 70%);
+  filter: blur(100px);
+  top: -150px;
+  left: -150px;
+  z-index: -1;
+}
