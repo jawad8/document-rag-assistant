@@ -9,6 +9,7 @@ __pycache__/
 *.py[cod]
 db.sqlite3
 frontend/build/
+frontend/dist/
 .pytest_cache/
 .DS_Store
 Thumbs.db
