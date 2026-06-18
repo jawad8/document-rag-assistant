@@ -1,8 +1,8 @@
-import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 
 const API_BASE_URL =
-  process.env.REACT_APP_API_BASE_URL || "http://127.0.0.1:8000";
+  import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 
 export default function App() {
   const [token, setToken] = useState(localStorage.getItem("token"));

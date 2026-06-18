@@ -62,10 +62,10 @@ python manage.py runserver
 cd frontend
 npm install
 copy .env.example .env
-npm start
+npm run dev
 ```
 
-Open `http://localhost:3000` and sign in with the Django user you created.
+Open `http://localhost:5173` and sign in with the Django user you created.
 
 Ollama must be running locally with the configured model:
 
@@ -84,7 +84,7 @@ ollama serve
 | `CORS_ALLOWED_ORIGINS` | Comma-separated client origins | local React URLs |
 | `OLLAMA_URL` | Ollama generation endpoint | `http://localhost:11434/api/generate` |
 | `OLLAMA_MODEL` | Generation model | `llama3` |
-| `REACT_APP_API_BASE_URL` | Backend origin used by React | `http://127.0.0.1:8000` |
+| `VITE_API_BASE_URL` | Backend origin used by React | `http://127.0.0.1:8000` |
 
 ## API documentation
 
@@ -106,4 +106,3 @@ npm run build
 ## Current document support
 
 The ingestion pipeline currently reads UTF-8 text files. PDF and DOCX extraction are natural next steps for the project.
-
